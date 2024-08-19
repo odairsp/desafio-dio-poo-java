@@ -15,9 +15,11 @@ public class Main {
         Mentoria verilog = new Mentoria("Introdução a Verilog", "Códigos básicos Verilog", LocalDate.now().plusWeeks(1));
 
 
-        System.out.println(cursoPhp);
+        System.out.println(cursoPhp.calcularXp());
         System.out.println(cursoVerilog);
         System.out.println(cursoPython);
         System.out.println(php);
+        System.out.println(cplusplus);
+        System.out.println(verilog);
     }
 }
