@@ -9,7 +9,7 @@ public class Mentoria extends Conteudo{
     public Mentoria(String titulo, String descricao, LocalDate data) {
         this.setTitulo(titulo);
         this.setDescricao(descricao);
-        this.data = data;
+        this.setData(data);
     }
 
     @Override
@@ -26,11 +26,9 @@ public class Mentoria extends Conteudo{
 
     @Override
     public String toString() {
-        return "Mentoria{" +
-                "titulo='" + getTitulo() + '\'' +
-                ", descricao='" + getDescricao() + '\'' +
-                ", data=" + getData() +
-                '}';
+        return "\nMentoria: " + getTitulo() +
+                "\ndescricao: " + getDescricao() +
+                "\ndata: " + getData()+"\n";
     }
 
 }

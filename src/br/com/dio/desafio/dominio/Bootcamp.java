@@ -1,10 +1,7 @@
 package br.com.dio.desafio.dominio;
 
 import java.time.LocalDate;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 public class Bootcamp {
     private String nome;
@@ -19,6 +16,9 @@ public class Bootcamp {
         this.nome = nome;
         this.descricao = descricao;
 
+    }
+    public void addConteudo(Conteudo conteudo){
+        this.conteudos.add(conteudo);
     }
 
     public String getNome() {
@@ -52,6 +52,7 @@ public class Bootcamp {
     public void setConteudos(Set<Conteudo> conteudos) {
         this.conteudos = conteudos;
     }
+
 
 
     @Override

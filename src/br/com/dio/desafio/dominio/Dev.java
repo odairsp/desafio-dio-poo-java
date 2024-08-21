@@ -56,6 +56,13 @@ public class Dev {
     }
 
     @Override
+    public String toString() {
+        return "Dev: " + nome +
+                "\nconteudosInscritos: " + conteudosInscritos +
+                "\nconteudosConcluidos: " + conteudosConcluidos;
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Dev dev)) return false;
